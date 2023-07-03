@@ -29,8 +29,30 @@
                     <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
                     <span class="nk-menu-text">Roles</span>
                 </a>
-            </li><!-- .nk-menu-item -->
-            
+            </li>
+            <li class="nk-menu-heading">
+                <h6 class="overline-title text-primary-alt">Transaksi</h6>
+            </li>
+
+            <li class="nk-menu-item has-sub">
+                <a href="{{ URL::to("admin/simpanan") }}" class="nk-menu-link nk-menu-toggle">
+                    <span class="nk-menu-icon"><em class="icon ni ni-user-list"></em></span>
+                    <span class="nk-menu-text">Simpanan</span>
+                </a>
+                <ul class="nk-menu-sub">
+                    <li class="nk-menu-item">
+                        <a href="{{ URL::to("admin/simpanan/create") }}" class="nk-menu-link">
+                            <span class="nk-menu-text">Tambah</span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item">
+                        <a href="{{ URL::to("admin/simpanan/") }}" class="nk-menu-link">
+                            <span class="nk-menu-text">Daftar</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
         </ul><!-- .nk-menu -->
     </div><!-- .nk-sidebar-menu -->
 </div><!-- .nk-sidebar-content -->

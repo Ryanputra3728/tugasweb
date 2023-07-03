@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\SimpananController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,4 +31,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('admin/member', MemberController::class);
     Route::get('admin/editmember/{id}', [MemberController::class, 'edit']);
     Route::post('admin/updatemember/{id}', [MemberController::class, 'update']);
+
+    Route::resource('admin/simpanan', SimpananController::class);
 });
